@@ -11,7 +11,7 @@ public class Portero extends Futbolista {
 	}
 	
 	public String toString() {
-		return super.toString() + " con el dorsal " + this.dorsal + " . Le han marcado " + this.golesRecibidos; 
+		return super.toString() + " con el dorsal " + this.dorsal + ". Le han marcado " + this.golesRecibidos; 
 	}
 	
 	public int compareTo(Object o) {
