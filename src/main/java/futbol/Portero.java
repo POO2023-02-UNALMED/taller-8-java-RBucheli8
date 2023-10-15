@@ -14,7 +14,7 @@ public class Portero extends Futbolista {
 		return super.toString() + " con el dorsal " + this.dorsal + " . Le han marcado " + this.golesRecibidos; 
 	}
 	
-	public int compareTo(Futbolista p) {
+	public int compareTo(Portero p) {
 		if (this.golesRecibidos > p.golesRecibidos) {
 			return this.golesRecibidos - p.golesRecibidos;
 		}
