@@ -22,7 +22,7 @@ public abstract class Futbolista implements Comparable<Object> {
 	}
 	
 	public boolean equals(Futbolista f) {
-		if (this.compareTo(f) == 0) {
+		if (this == f) {
 			return true;
 		}
 		else {return false;}
