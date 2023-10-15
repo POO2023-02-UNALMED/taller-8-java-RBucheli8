@@ -14,19 +14,18 @@ public class Portero extends Futbolista {
 		return super.toString() + " con el dorsal " + this.dorsal + " . Le han marcado " + this.golesRecibidos; 
 	}
 	
-	public int compareTo(Portero p) {
-		if (this.golesRecibidos > p.golesRecibidos) {
-			return this.golesRecibidos - p.golesRecibidos;
-		}
-		else if (this.golesRecibidos < p.golesRecibidos) {
-			return p.golesRecibidos - this.golesRecibidos;
+	public int compareTo(Futbolista f) {
+		if (f instanceof Portero) {
+			Portero p = (Portero) f;
+			if (this.golesRecibidos > p.golesRecibidos) {
+				return this.golesRecibidos - p.golesRecibidos;
+			}
+			else if (this.golesRecibidos < p.golesRecibidos) {
+				return p.golesRecibidos - this.golesRecibidos;
+			}
+			else { return 0;}
 		}
 		else { return 0;}
-	}
-	
-	@Override
-	public int compareTo(Futbolista f) {
-		return 0;
 	}
 	
 	@Override
