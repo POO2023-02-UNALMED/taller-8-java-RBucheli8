@@ -14,9 +14,9 @@ public class Portero extends Futbolista {
 		return super.toString() + " con el dorsal " + this.dorsal + " . Le han marcado " + this.golesRecibidos; 
 	}
 	
-	public int compareTo(Futbolista f) {
-		if (f instanceof Portero) {
-			Portero p = (Portero) f;
+	public int compareTo(Object o) {
+		if (o instanceof Portero) {
+			Portero p = (Portero) o;
 			if (this.golesRecibidos > p.golesRecibidos) {
 				return this.golesRecibidos - p.golesRecibidos;
 			}
