@@ -24,10 +24,12 @@ public class Portero extends Futbolista {
 		else { return 0;}
 	}
 	
+	@Override
 	public int compareTo(Futbolista f) {
 		return 0;
 	}
 	
+	@Override
  	public boolean jugarConLasManos() {
 		return true;
 	}
